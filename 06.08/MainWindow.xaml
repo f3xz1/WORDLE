@@ -1,0 +1,110 @@
+﻿<Window x:Class="_06._08.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_06._08"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="450">
+    <Grid>
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <RichTextBox Margin="10">
+
+        </RichTextBox>
+        <TextBox Grid.Column="1" Margin="10"></TextBox>-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="40" Name="wordsgrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBox Grid.Row="0" Grid.Column="0" ></TextBox>
+            <TextBox Grid.Row="0" Grid.Column="1" ></TextBox>
+            <TextBox Grid.Row="0" Grid.Column="2" ></TextBox>
+            <TextBox Grid.Row="0" Grid.Column="3" ></TextBox>
+            <TextBox Grid.Row="0" Grid.Column="4" TextChanged="row_chenged0"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="0" ></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" ></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="2" ></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="3" ></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="4" TextChanged="row_chenged1" ></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="0" ></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" ></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="2" ></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="3" ></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="4" TextChanged="row_chenged2"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="0" ></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" ></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="2" ></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="3" ></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="4" TextChanged="row_chenged3" ></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="0" ></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="1" ></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="2" ></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="3" ></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="4" TextChanged="row_chenged4" ></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="0" ></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="1" ></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="2" ></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="3" ></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="4" ></TextBox>
+        </Grid>
+
+        <UniformGrid Grid.Row="1" Columns="10" Rows="3" Name="uniformgrid">
+            <Button Click="Button_Click">A</Button>
+            <Button Click="Button_Click">Б</Button>
+            <Button Click="Button_Click">В</Button>
+            <Button Click="Button_Click">Г</Button>
+            <Button Click="Button_Click">Д</Button>
+            <Button Click="Button_Click">Е</Button>
+            <Button Click="Button_Click">Ж</Button>
+            <Button Click="Button_Click">З</Button>
+            <Button Click="Button_Click">И</Button>
+            <Button Click="Button_Click">Й</Button>
+            <Button Click="Button_Click">К</Button>
+            <Button Click="Button_Click">Л</Button>
+            <Button Click="Button_Click">М</Button>
+            <Button Click="Button_Click">Н</Button>
+            <Button Click="Button_Click">О</Button>
+            <Button Click="Button_Click">П</Button>
+            <Button Click="Button_Click">Р</Button>
+            <Button Click="Button_Click">С</Button>
+            <Button Click="Button_Click">Т</Button>
+            <Button Click="Button_Click">У</Button>
+            <Button Click="Button_Click">Ф</Button>
+            <Button Click="Button_Click">Х</Button>
+            <Button Click="Button_Click">Ц</Button>
+            <Button Click="Button_Click">Ч</Button>
+            <Button Click="Button_Click">Ш</Button>
+            <Button Click="Button_Click">Щ</Button>
+            <Button Click="Button_Click">Ъ</Button>
+            <Button Click="Button_Click">Ы</Button>
+            <Button Click="Button_Click">Ь</Button>
+            <Button Click="Button_Click">Э</Button>
+        </UniformGrid>
+        <UniformGrid Grid.Row="2" Columns="4">
+            <Button>-></Button>
+            <Button Click="Button_Click">Ю</Button>
+            <Button Click="Button_Click">Я</Button>
+            <Button></Button>
+        </UniformGrid>
+    </Grid>
+</Window>
